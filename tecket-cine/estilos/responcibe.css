@@ -1,0 +1,163 @@
+/* Responsive Styles */
+
+/* Tablets y dispositivos medianos */
+@media (max-width: 992px) {
+    .navbar-container {
+        flex-wrap: wrap;
+    }
+    
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+    
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+    
+    .app-content {
+        flex-direction: column;
+    }
+    
+    .app-image img {
+        max-height: 400px;
+        margin-top: 20px;
+    }
+    
+    .movie-card {
+        min-width: 220px;
+    }
+    
+    .promo-container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+/* Móviles y dispositivos pequeños */
+@media (max-width: 768px) {
+    .logo a {
+        font-size: 1.2rem;
+    }
+    
+    .nav-actions {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+    
+    .search input {
+        width: 150px;
+    }
+    
+    .hero-banner {
+        height: 60vh;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    section {
+        padding: 30px 5%;
+    }
+    
+    section h3 {
+        font-size: 1.5rem;
+    }
+    
+    .movie-card {
+        min-width: 160px;
+    }
+    
+    .movie-info {
+        opacity: 1;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0) 100%);
+    }
+    
+    .movie-info h4 {
+        font-size: 1rem;
+    }
+    
+    .movie-info p {
+        font-size: 0.8rem;
+    }
+    
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .cinema-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .app-text {
+        padding: 25px;
+    }
+    
+    .app-text h3 {
+        font-size: 1.6rem;
+    }
+    
+    .app-text p {
+        font-size: 1rem;
+    }
+    
+    .app-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .footer-links {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Móviles muy pequeños */
+@media (max-width: 480px) {
+    .navbar-container {
+        padding: 0 10px;
+    }
+    
+    .nav-links {
+        gap: 10px;
+        font-size: 0.8rem;
+    }
+    
+    .search input {
+        width: 120px;
+        font-size: 0.9rem;
+    }
+    
+    .search-btn {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+    
+    .category-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .movie-slider {
+        gap: 10px;
+    }
+    
+    .movie-card {
+        min-width: 140px;
+    }
+}
