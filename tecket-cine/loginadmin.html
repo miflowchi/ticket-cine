@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar sesión - CineTickets</title>
+    <link rel="stylesheet" href="estilos/loginadmin.css">
+</head>
+<body class="login-body">
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="index.html">
+                  <span>CineTic</span>
+                </a>
+              </div>
+              
+        </div>
+    </header>
+    <div class="login-container">
+        <form action="login.php" method="POST" class="login-form">
+            <h2>Inicia sesión</h2>
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            <input type="password" name="password" placeholder="Contraseña" required>
+            <button type="submit">Iniciar sesión</button>
+            <p class="options">
+                <a href="#">¿Olvidaste tu contraseña?</a>
+                <span> | </span>
+                <a href="#">Regístrate</a>
+            </p>
+        </form>
+    </div>
+</body>
+</html>
