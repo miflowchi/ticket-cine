@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CineTickets - Compra tus entradas de cine</title>
-    <link rel="stylesheet" href="estilos/responcibe.css">
+    
     <link rel="stylesheet" href="estilos/style.css">
     <script src="scrip/scrip.js" defer></script>
+   
 </head>
 <body>
     <!-- Header/Navbar -->
@@ -44,14 +45,20 @@
           <a href="cartelera.html" class="btn btn-primary">Ver Cartelera</a>
         </div>
     </section>
-      
+      <style>
+                .movie-card img {
+            width: 300px; /* Ajustar al ancho del contenedor */
+            height: 500px; /* Altura fija para todas las imágenes */
+            object-fit: cover; /* Mantener proporciones y recortar si es necesario */
+        }
+      </style>
 
 <!-- Featured Movies Carousel -->
 <section class="featured-movies">
 <h3>Películas Destacadas</h3>
 <div class="movie-slider">
 <div class="movie-card">
-<img src="https://source.unsplash.com/300x450/?movie,action" alt="Película 1">
+<img src="https://es.web.img2.acsta.net/c_310_420/img/6d/7e/6d7ebaf55a56605c074747f74824fb99.jpg" alt="Película 1">
 <div class="movie-info">
 <h4>Título de Película 1</h4>
 <p>Acción, Aventura | 120 min</p>
@@ -59,7 +66,7 @@
 </div>
 </div>
 <div class="movie-card">
-<img src="https://source.unsplash.com/300x450/?movie,comedy" alt="Película 2">
+<img src="https://www.lavanguardia.com/peliculas-series/images/movie/poster/2025/2/w300/pVMSRyAiye7gZ8NtuCt1qgbspY9.jpg" alt="Película 2">
 <div class="movie-info">
 <h4>Título de Película 2</h4>
 <p>Comedia | 95 min</p>
@@ -67,7 +74,7 @@
 </div>
 </div>
 <div class="movie-card">
-<img src="https://source.unsplash.com/300x450/?movie,drama" alt="Película 3">
+<img src="https://hips.hearstapps.com/es.h-cdn.co/crfes/images/ninos/ocio/peliculas-para-ver-en-familia/brave-indomable/3633391-1-esl-ES/Brave-Indomable.jpg?resize=980:*" alt="Película 3">
 <div class="movie-info">
 <h4>Título de Película 3</h4>
 <p>Drama | 110 min</p>
@@ -75,7 +82,7 @@
 </div>
 </div>
 <div class="movie-card">
-<img src="https://source.unsplash.com/300x450/?movie,scifi" alt="Película 4">
+<img src="https://hips.hearstapps.com/hmg-prod/images/wheelman-1584377342.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Película 4">
 <div class="movie-info">
 <h4>Título de Película 4</h4>
 <p>Ciencia Ficción | 135 min</p>
@@ -90,19 +97,19 @@
 <h3>Explora por Categorías</h3>
 <div class="category-grid">
 <a href="categoria.html?cat=accion" class="category-item">
-<img src="https://source.unsplash.com/400x225/?action,movie" alt="Acción">
+<img src="https://hips.hearstapps.com/hmg-prod/images/tierras-perdidas-67ea90c60f4ce.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Acción">
 <span>Acción</span>
 </a>
 <a href="categoria.html?cat=comedia" class="category-item">
-<img src="https://source.unsplash.com/400x225/?comedy,movie" alt="Comedia">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Z29ubuk8VXt1APmZDN3OLjJVpAOVadLdYQ&s" alt="Comedia">
 <span>Comedia</span>
 </a>
 <a href="categoria.html?cat=drama" class="category-item">
-<img src="https://source.unsplash.com/400x225/?drama,movie" alt="Drama">
+<img src="https://www.lavanguardia.com/peliculas-series/images/movie/poster/2025/2/w300/q0HxfkF9eoa6wSVnzwMhuDSK7ba.jpg" alt="Drama">
 <span>Drama</span>
 </a>
 <a href="categoria.html?cat=terror" class="category-item">
-<img src="https://source.unsplash.com/400x225/?horror,movie" alt="Terror">
+<img src="https://los40.com/resizer/v2/DIWCCFQJBJKALNQ3BET2QXU674.jpg?auth=37acaf2ab9a28ab43393dc8303b9b5dffaba1447cad816f241c6a4388d2bbdfc&quality=70&width=1200" alt="Terror">
 <span>Terror</span>
 </a>
 </div>

@@ -221,10 +221,9 @@ section h3 {
 }
 
 .movie-card img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 4px;
+    width: 300px; /* Ajustar al ancho del contenedor */
+    height: 270px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Mantener proporciones y recortar si es necesario */
 }
 
 .movie-info {
@@ -272,9 +271,9 @@ section h3 {
 }
 
 .category-item img {
-    width: 100%;
-    height: auto;
-    display: block;
+    width: 100%; /* Ajustar al ancho del contenedor */
+    height: 270px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Mantener proporciones y recortar si es necesario */
 }
 
 .category-item span {
@@ -307,8 +306,9 @@ section h3 {
 }
 
 .promo-card img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Ajustar al ancho del contenedor */
+    height: 270px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Mantener proporciones y recortar si es necesario */
 }
 
 .promo-info {
@@ -409,6 +409,9 @@ section h3 {
 }
 
 .app-image img {
+    width: 100%; /* Ajustar al ancho del contenedor */
+    height: 270px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Mantener proporciones y recortar si es necesario */
     max-height: 500px;
 }
 
@@ -459,4 +462,13 @@ section h3 {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     color: #777;
     font-size: 0.9rem;
+}
+
+.movie-slider .movie-card img, 
+.category-grid .category-item img, 
+.promo-container .promo-card img, 
+.app-download .app-image img {
+    width: 100%; /* Ajustar al ancho del contenedor */
+    height: 270px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Mantener proporciones y recortar si es necesario */
 }
