@@ -1,6 +1,6 @@
     -- Creación de la base de datos
-CREATE DATABASE CineDB;
-USE CineDB;
+CREATE DATABASE venta_ticket_cine;
+USE venta_ticket_cine;
 
 -- Tabla de Administradores
 CREATE TABLE Administrador (

@@ -71,6 +71,45 @@
       padding: 10px;
       font-size: 1rem;
     }
+
+    #formulario-agregar {
+      display: none;
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px auto;
+      width: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    #formulario-agregar label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    #formulario-agregar input,
+    #formulario-agregar textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #444;
+      border-radius: 5px;
+      background-color: #333;
+      color: #fff;
+    }
+
+    #formulario-agregar input[type="submit"] {
+      background-color: #e50914;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    #formulario-agregar input[type="submit"]:hover {
+      background-color: #ff1b2d;
+    }
   </style>
 </head>
 <body>
@@ -80,7 +119,7 @@
   </header>
 
   <div class="buttons">
-    <button>Agregar Película</button>
+    <button id="btn-agregar-pelicula">Agregar Película</button>
     <button>Modificar Película</button>
     <button>Eliminar Película<button>
   </div>
@@ -100,6 +139,43 @@
     </div>
 
   </div>
+
+  <div id="formulario-agregar">
+    <form action="php/agregarpelis.php" method="POST" enctype="multipart/form-data">
+      <label>Título:</label>
+      <input type="text" name="titulo" required>
+
+      <label>Duración (minutos):</label>
+      <input type="number" name="duracion" required>
+
+      <label>Género:</label>
+      <input type="text" name="genero">
+
+      <label>Clasificación:</label>
+      <input type="text" name="clasificacion">
+
+      <label>Sinopsis:</label>
+      <textarea name="sinopsis"></textarea>
+
+      <label>Fecha de estreno:</label>
+      <input type="date" name="fecha_estreno">
+
+      <label>Director:</label>
+      <input type="text" name="director">
+
+      <label>Imagen del póster:</label>
+      <input type="file" name="imagen_poster" accept="image/*">
+
+      <input type="submit" value="Guardar Película">
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("btn-agregar-pelicula").addEventListener("click", () => {
+      const form = document.getElementById("formulario-agregar");
+      form.style.display = form.style.display === "none" ? "block" : "none";
+    });
+  </script>
 
 </body>
 </html>

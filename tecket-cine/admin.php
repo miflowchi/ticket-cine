@@ -124,11 +124,7 @@
   <div class="main">
     <div class="section-title">Panel de Películas</div>
 
-    <div class="buttons">
-      <button>Agregar Película</button>
-      <button>Modificar Película</button>
-      <button>Eliminar Película</button>
-    </div>
+    
 
     <div class="movie-grid">
       <div class="movie-card">
@@ -145,6 +141,10 @@
       </div>
     </div>
   </div>
+    <div id="formulario-agregar" style="display:none; margin-bottom: 20px;">
+   
+   
+
 
 </body>
 </html>
