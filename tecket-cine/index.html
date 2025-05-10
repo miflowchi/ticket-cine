@@ -19,7 +19,7 @@
                 </a>
             </div>
             <div class="nav-links">
-                <a href="cartelera.html" class="nav-link">Cartelera</a>
+                <a href="cartelera.php" class="nav-link">Cartelera</a>
                 <a href="proximamente.html" class="nav-link">Próximamente</a>
                 <a href="promociones.html" class="nav-link">Promociones</a>
                 <a href="confiteria.html" class="nav-link">Confitería</a>
@@ -42,7 +42,7 @@
         <div class="hero-content">
           <h2>Las mejores películas en los mejores cines</h2>
           <p>Compra tus entradas online y disfruta de una experiencia única</p>
-          <a href="cartelera.html" class="btn btn-primary">Ver Cartelera</a>
+          <a href="cartelera.php" class="btn btn-primary">Ver Cartelera</a>
         </div>
     </section>
       <style>
@@ -177,31 +177,9 @@
 </div>
 </section>
 
-<section class="purchase-form">
-<h3>Compra tus entradas</h3>
-<form action="php/compraticket.php" method="POST">
-<label for="movie_id">Película:</label>
-<select name="movie_id" id="movie_id" required>
-<option value="1">Película 1</option>
-<option value="2">Película 2</option>
-</select>
-<label for="cinema_id">Cine:</label>
-<select name="cinema_id" id="cinema_id" required>
-<option value="1">Cine Plaza Norte</option>
-<option value="2">Cine Jockey Plaza</option>
-</select>
-<label for="show_time">Horario:</label>
-<input type="text" name="show_time" id="show_time" required>
-<label for="num_tickets">Cantidad de entradas:</label>
-<input type="number" name="num_tickets" id="num_tickets" min="1" required>
-<label for="seat_type">Tipo de asiento:</label>
-<select name="seat_type" id="seat_type" required>
-<option value="Regular">Regular</option>
-<option value="VIP">VIP</option>
-</select>
-<button type="submit" class="btn btn-primary">Comprar</button>
-</form>
-</section>
+
+
+
 
 <!-- Footer -->
 <footer class="footer">
